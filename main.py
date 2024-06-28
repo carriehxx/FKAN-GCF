@@ -3,6 +3,7 @@ import os
 import argparse
 from utils.quick_start import quick_start
 os.environ['NUMEXPR_MAX_THREADS'] = '48'
+#设置环境变量 NUMEXPR_MAX_THREADS 的值为 '48'。具体来说，它是告诉NumExpr库在进行计算时最多可以使用48个线程。
 
 
 if __name__ == '__main__':
