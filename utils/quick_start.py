@@ -23,6 +23,14 @@ def quick_start(model, dataset, config_dict, save_model=True):
     logger.info('██Server: \t' + platform.node())
     logger.info('██Dir: \t' + os.getcwd() + '\n')
     logger.info(config)
+    """
+    这段代码的主要功能是：
+    创建并初始化配置对象。
+    初始化日志记录器。
+    获取日志记录器实例。
+    记录并输出服务器信息、当前工作目录和配置信息。
+    通过这些日志记录，开发者可以方便地查看和调试程序的运行环境和配置情况。
+    """
 
     # load data
     dataset = RecDataset(config)
