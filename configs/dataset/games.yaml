@@ -1,10 +1,10 @@
 # Common Features
-USER_ID_FIELD: user
-ITEM_ID_FIELD: item
+USER_ID_FIELD: userId
+ITEM_ID_FIELD: itemId
 #RATING_FIELD: rating
 TIME_FIELD: timestamp
 # Selectively Loading
-load_cols: [item, user, timestamp]
+load_cols: [itemId, userId, timestamp]
 
 # Filtering
 max_user_inter_num: ~
