@@ -72,7 +72,7 @@ class RecDataset(object):
         """
         self.logger.info('Loading {} from scratch'.format(self.__class__))
         # get path
-        file_path = os.path.join(self.dataset_path, '{}.inter'.format(self.dataset_name))
+        file_path = os.path.join(self.dataset_path, '{}.csv'.format(self.dataset_name))
         if not os.path.isfile(file_path):
             raise ValueError('File {} not exist'.format(file_path))
         self.df = self._load_df_from_file(file_path, self.config['load_cols'])
