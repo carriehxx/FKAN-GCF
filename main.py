@@ -9,8 +9,8 @@ os.environ['NUMEXPR_MAX_THREADS'] = '48'
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--model', '-m', type=str, default='FourierKAN_GCF', help='name of models')
-    parser.add_argument('--dataset', '-d', type=str, default='mooc', help='name of datasets')
-    #默认的dataset名称是mooc
+    parser.add_argument('--dataset', '-d', type=str, default='games', help='name of datasets')
+    #默认的dataset名称是games
     
     config_dict = {
         'gpu_id': 0,
